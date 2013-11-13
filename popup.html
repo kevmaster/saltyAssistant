@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 200px;
+        overflow-x: hidden;
+        min-height: 100px;
+      }
+    </style>
+    <script src="jquery-1.9.1.js" ></script>
+
+  </head>
+  <body>
+
+    <div id="in"></div>
+
+    <div id="out"> </div>
+<form id="fightcard" name="fightcard">
+
+                <input type="hidden" id="selectedplayer" name="selectedplayer"  />
+                <div class="betcard left redborder">
+                    <div class="left">
+                        <span class="field" id="player1wager"></span><br/>
+                    </div>
+                    <div class="right">
+
+                        <span class="submit">
+                            <input name="player1" type="submit" value="" class="betbuttonred"/>
+                        </span>
+                    </div>
+                </div>
+                <div class="betcard right blueborder">
+                    <div class="left">
+                        <span class="submit">
+                            <input name="player2" type="submit" value="" class="betbuttonblue"/>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <span class="field" id="player2wager"></span><br/>
+                    </div>
+
+                </div>
+                <div id="wagerwrapper">
+                    <span style="font-size:1.2em;">Place your bet -</span>
+                    <br />
+                    <input type="text" name="wager" id="wager" placeholder="Wager" /><br />
+
+                </div>
+            </form>
+    <script src="popup.js"></script>
+
+
+  </body>
+</html>
+
